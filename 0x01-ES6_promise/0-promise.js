@@ -1,10 +1,8 @@
-function getResponseFromAPI() {
-  const promise1 = new Promise((resolve, reject) => {
-    resolve('Success!');
-  });
-
-  promise1.then((value) => {
-    console.log(value);
-      // expected output: "Success!"
-  });
+/*eslint-disable*/
+export default function getResponseFromAPI() {
+    return new Promise((resolve,reject) => {
+	// do some async task
+	resolve();
+    });
 }
+
