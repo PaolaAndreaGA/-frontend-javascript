@@ -15,20 +15,6 @@ export default class HolbertonCourse {
      this._students = students;
   }
 
-  get name() {
-      return this._name;
-  }
-
-  get length() {
-      return this._length;
-  }
-
-  get students() {
-      return this_students;
-  }
-
-    
-
   set name(myName) {
       if (Object.getPrototypeOf(myName) !== String.prototype) throw TypeError('name must be String');
       this._name = myName;
@@ -44,5 +30,16 @@ export default class HolbertonCourse {
 	  if (Object.getPrototypeOf(myStudent) !== String.prototype) throw TypeError('student must be an Array');
       });
       this._students = students;
+  }
+  get name() {
+      return this._name;
+  }
+
+  get length() {
+      return this._length;
+  }
+
+  get students() {
+      return this_students;
   }
 }
