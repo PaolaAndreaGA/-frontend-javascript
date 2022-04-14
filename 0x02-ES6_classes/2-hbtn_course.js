@@ -16,30 +16,31 @@ export default class HolbertonCourse {
   }
 
   set name(myName) {
-      if (Object.getPrototypeOf(myName) !== String.prototype) throw TypeError('Name must be a string');
-      this._name = myName;
+    if (Object.getPrototypeOf(myName) !== String.prototype) throw TypeError('Name must be a string');
+    this._name = myName;
   }
     
   set length(myLength) {
-      if (Object.getPrototypeOf(myLength) !== Number.prototype) throw TypeError('Length must be a number');
-      this._length = myLength;
+    if (Object.getPrototypeOf(myLength) !== Number.prototype) throw TypeError('Length must be a number');
+    this._length = myLength;
   }
   set students(myStudents) {
-      if (Object.getPrototypeOf(myStudents) !== Array.prototype) throw TypeError('Students mus be an array of Strings');
-      students.forEach((student) => {
-	  if (Object.getPrototypeOf(myStudent) !== String.prototype) throw TypeError('Student must be an Array of Strings');
-      });
-      this._students = students;
+    if (Object.getPrototypeOf(myStudents) !== Array.prototype) throw TypeError('Students mus be an array of Strings');
+    myStudents.forEach((student) => {
+      if (Object.getPrototypeOf(myStudent) !== String.prototype) throw TypeError('Student must be an Array of Strings');
+    });
+    this._students = students;
   }
+    
   get name() {
-      return this._name;
+    return this._name;
   }
 
   get length() {
-      return this._length;
+    return this._length;
   }
 
   get students() {
-      return this_students;
+    return this_students;
   }
 }
