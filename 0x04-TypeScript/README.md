@@ -24,16 +24,6 @@ TypeScript uses compile time type checking. Which means it checks if the specifi
 
 ----------
 
-[w3schoolsCERTIFIED.2022](https://courses.w3schools.com/)
-
-## Get Certified!
-
-Complete the TypeScript modules, do the exercises, take the exam and become w3schools certified!!
-
-
-[$95 ENROLL](https://courses.w3schools.com/browse/certifications/courses/typescript-certification-exam)
-
-----------
 
 ## How do I use TypeScript?
 
