@@ -7,4 +7,4 @@ export default function createInt8TypedArray(length, position, value) {
   viewer.setInt8(position, value);
   return viewer;
 }
-x
+
