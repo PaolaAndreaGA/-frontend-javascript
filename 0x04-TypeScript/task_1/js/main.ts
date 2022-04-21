@@ -33,3 +33,31 @@ function printTeacher(firstName: string, lastName:string): string {
   return `${firstName[0]}.${lastName}`;
 }
 console.log(printTeacher("John", "Doe"));
+
+interface interfaceClass {
+  firstName: string;
+  lastName: string;
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+interface constructClass {
+  new(firstName: string, lastName: string): interfaceClass;
+}
+
+class StudentClass implements interfaceClass {
+  firstName: string;
+  lastName: string;
+
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  workOnHomework(): string {
+    return 'Currently working';
+  }
+  displayName(): string {
+    return this.firstName;
+  }
+}
