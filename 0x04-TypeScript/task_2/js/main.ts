@@ -56,3 +56,10 @@ function executeWork(employee: Director | Teacher): string {
 console.log(executeWork(createEmployee('Camilo ', 'Torres ', 200)));
 console.log(executeWork(createEmployee('Simon ', 'Bolivar ', 1000)));
 }
+type Subjects = 'Math' | 'History';
+function teachClass(todayClass: Subjects): string {
+  return todayClass === 'Math'? 'Teaching Math' : 'Teaching History';
+}
+
+console.log(teachClass('Math'));
+console.log(teachClass('History'));
