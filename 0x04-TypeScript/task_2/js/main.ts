@@ -46,3 +46,13 @@ function createEmployee(firstName: string, lastName: string, salary: number | st
 console.log(createEmployee('Camilo ', 'Torres ', 200));
 console.log(createEmployee('Simon ', 'Bolivar ', 1000));
 console.log(createEmployee('Antonio ','Nariño ', '$500'));
+
+function isDirector(employee: Director | Teacher): employee is Director {
+  return (employee instanceof Director) ? true : false;
+}
+
+function executeWork(employee: Director | Teacher): string {
+  return isDirector(employee) ? employee.workDirectorTasks() : employee.workTeacherTasks();
+console.log(executeWork(createEmployee('Camilo ', 'Torres ', 200)));
+console.log(executeWork(createEmployee('Simon ', 'Bolivar ', 1000)));
+}
